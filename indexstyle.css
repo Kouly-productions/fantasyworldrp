@@ -6,3 +6,18 @@
 body {
     background-color: #2a2a2a;
 }
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+button {
+    width: 100px;
+    height: 20px;
+}

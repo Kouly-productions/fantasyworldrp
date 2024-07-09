@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CharacterInfo/Layout.css">
+    <link rel="stylesheet" href="/CharacterInfo/search.css">
+    <title>Game World</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="GoToMain"><a href="/index.html">Main</a></li>
+                <li><a href="#">Hjem</a></li>
+                <li><a href="#">Map</a></li>
+                <li><a href="#">Characters</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="menu-content-box">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <div id="searchResults"></div>
+            </div>
+        </div>
+        <div class="content-box">
+            <h2>Bill Cipher</h2>
+            <p>Description of new content goes here.</p>
+        </div>
+        <div class="content-box">
+            <h2>Game Lore</h2>
+            <p>Background story and lore information goes here.</p>
+            <img src="/Images/Bill.png" alt="Bill Cipher">
+            
+            <h3 class="racial-traits-title">Egenskaber</h3>
+            <div class="racial-traits">
+                <div class="trait">
+                    <img src="/Images/ArcaneLogo.png" alt="Arcane Resistance">
+                    <h4>Arcane Resistance</h4>
+                    <p>Arcane resistance increased by 10</p>
+                </div>
+                <div class="trait">
+                    <img src="/Images/Multispell.png" alt="Arcane Meditation">
+                    <h4>World manipulation</h4>
+                    <p>Recovers 40% of mana (25% HP for non-casters) while casting (8 seconds)</p>
+                </div>
+                <div class="trait">
+                    <img src="/Images/ArcaneLogo2.png" alt="Bow Specialization">
+                    <h4>Bow Specialization</h4>
+                    <p>+5 Bow skill</p>
+                </div>
+                <div class="trait">
+                    <img src="/Images/ArcaneLogo3.png" alt="Enchanting Specialization">
+                    <h4>Enchanting Specialization</h4>
+                    <p>+10 Enchanting</p>
+                </div>
+            </div>
+            <table class="abilities-table">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Level</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="/Images/ArcaneLogo2.png" alt="Ability 1"></td>
+                        <td>Arcane Blast</td>
+                        <td>1</td>
+                        <td>Fires a blast of arcane energy, dealing damage to the target.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/Images/ArcaneLogo.png" alt="Ability 2"></td>
+                        <td>Mystic Shield</td>
+                        <td>5</td>
+                        <td>Creates a protective barrier that absorbs incoming damage.</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="/CharacterInfo/search.js"></script>
+</body>
+</html>

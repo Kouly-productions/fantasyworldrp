@@ -1,6 +1,6 @@
 const searchableItems = [
-    { title: 'Bill Cipher', url: 'BillInfo.html' },
-    { title: 'Knight', url: 'Knight.html' },
+    { title: 'Bill Cipher', url: 'Bill/BillInfo.html' },
+    { title: 'Lasse Vestergård', url: 'Lasse/LasseInfo.html' },
     // Add more items as needed
 ];
 
@@ -31,7 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
         
         results.forEach(item => {
             const div = document.createElement('div');
-            div.innerHTML = `<a href="${item.url}">${item.title}</a>`;
+            // Construct the full URL
+            const fullUrl = `/CharacterInfo/${item.url}`;
+            div.innerHTML = `<a href="${fullUrl}">${item.title}</a>`;
             searchResults.appendChild(div);
         });
         searchResults.style.display = 'block';

@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
 body {
     font-family: Arial, sans-serif;
     background-color: #2a2a2a;
@@ -21,7 +20,9 @@ body {
     color: #ffa500;
     margin-top: 2rem;
 }
-
+img {
+    max-height: 510px;
+}
 .racial-traits {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -37,24 +38,23 @@ body {
     padding: 1rem;
     border-radius: 5px;
 }
-
+.trait:hover{
+    background-color: #3a3a3a;
+}
 .trait img {
     width: 60px;
     height: 60px;
     margin-bottom: 0.5rem;
 }
-
 .trait h4 {
     color: #ffa500;
     margin: 0 0 0.5rem 0;
 }
-
 .trait h3 {
     color: #a200ff;
     margin: 0 0 0.5rem 0;
     font-size: 15px;
 }
-
 .trait p {
     margin: 0;
     font-size: 0.9rem;
@@ -103,7 +103,6 @@ h2 {
     font-size: 25px;
     font-weight: bold;
 }
-
 .abilities-table {
     width: 100%;
     border-collapse: collapse;
@@ -111,29 +110,24 @@ h2 {
     background-color: #333333;
     color: #ffffff;
 }
-
 .abilities-table th, .abilities-table td {
     border: 1px solid #444444;
     padding: 8px;
     text-align: left;
 }
-
 .abilities-table th {
     background-color: #3a3a3a;
     font-weight: bold;
     color: #ffa500; /* Orange color for headers, adjust as needed */
 }
-
 .abilities-table img {
     width: 32px;
     height: 32px;
     vertical-align: middle;
 }
-
 .abilities-table tr:nth-child(even) {
     background-color: #2f2f2f;
 }
-
 .abilities-table tr:hover {
     background-color: #3f3f3f;
 }
